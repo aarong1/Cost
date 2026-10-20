@@ -333,7 +333,7 @@ tags$nav(
                                 
                                 
                                 tags$div( id = "intro",
-                                          h2('Cost and Impact Analysis for Decision Support and Public Health Planning ',class = 'm-5 p-3 bg-info-subtle'),
+                                          h2('Cost and Impact Analysis for Decision Support and Public Health Planning ',class = 'm-5 p-3 text-info'),
                                           hr(),
                                           tags$span(class ='',"The Impact and Costing module of the Population Health Model supports Decision Making and
                                                     Public Health Planning for the Public Health Agency.

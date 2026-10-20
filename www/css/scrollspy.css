@@ -1,0 +1,59 @@
+#scrollspy-nav i {
+  /*
+  color: grey;
+  Change icon color */
+}
+
+#scrollspy-content h5 {
+  color: grey;
+  margin-left: 1rem;
+  margin-top: 10px;
+}
+
+#scrollspy-content span {
+  font-size: 90%;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#intro p,
+.nav-card-description {
+  display: block;
+  margin-right: 8%;
+}
+
+#intro h5 > h5 {
+  color: grey;
+  margin-left: 2rem;
+}
+
+#intro p {
+  color: dimgrey;
+  margin-left: 2rem;
+}
+
+#scrollspy-nav {
+  border-radius: 15px;
+}
+
+#scrollspy-content {
+  margin-left: 50px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+#scrollspy-nav > a.nav-link.active {
+  background-color: dar;
+  color: white;
+  border-radius: 4px;
+}
+
+#scrollspy-nav a.nav-link.active {
+  background-color: #00bcd4;
+  color: white;
+  border-radius: 4px;
+}
+
+.section {
+  height: 400px;
+  padding-top: 60px;
+}

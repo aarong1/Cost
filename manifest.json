@@ -4012,7 +4012,7 @@
   },
   "files": {
     "app.R": {
-      "checksum": "03b70e53c2a1847f10cad9c48c2aee02"
+      "checksum": "b0964edfebb5698d628acfab8754beb7"
     },
     "components/disabled_risk_to_intervene_on.R": {
       "checksum": "bc0c71e4809fed94a0651e17985f087b"
@@ -4033,10 +4033,55 @@
       "checksum": "c0e9783c27bce258ba1cf641dcd03156"
     },
     "cost_charts.RData": {
-      "checksum": "1f1b59563ec71da71a0853ca2f587412"
+      "checksum": "1cc47dbd1d974949174765dc134c8d29"
     },
     "cost_graphs.R": {
-      "checksum": "72c890d219f1a33ea4b95f39cadeaf10"
+      "checksum": "ae5f222ff2439abaa91c1a8d0b57cef1"
+    },
+    "deploy_data/admissions_chart.RData": {
+      "checksum": "73a3bc4deb737d2b2ff96f9e3faa72db"
+    },
+    "deploy_data/bed_days_chart.RData": {
+      "checksum": "3bbd7c4c0d79de1823628c3978ba0e6b"
+    },
+    "deploy_data/cmms_age10_chart.RData": {
+      "checksum": "49e3c59e5173f0c41009248e32ec7775"
+    },
+    "deploy_data/costs_disease_chart.RData": {
+      "checksum": "837f09e952bc4b7701686fbc5c4b7564"
+    },
+    "deploy_data/days_lost_chart.RData": {
+      "checksum": "92ab2e63e4582f05ee9e96264fedac53"
+    },
+    "deploy_data/disease_daly_start_charts.RData": {
+      "checksum": "912cdf981e0978e461ad15501b8ca3a9"
+    },
+    "deploy_data/disease_daly_time_charts.RData": {
+      "checksum": "c24c53744ab4c314670804029d8ead2d"
+    },
+    "deploy_data/emergency_admissions_chart.RData": {
+      "checksum": "e879f1d1a30c5bacde0192bde1e028f4"
+    },
+    "deploy_data/multimorbidity_age10_chart.RData": {
+      "checksum": "dec6d0e1bde1c834d09eae0598dcd258"
+    },
+    "deploy_data/multimorbidity_age10.RData": {
+      "checksum": "8d6746da60c2a807e1d36cf7ffc465ca"
+    },
+    "deploy_data/sick_costs_chart.RData": {
+      "checksum": "0ffe3b20d88cccdf7a57f1710970c2f4"
+    },
+    "deploy_data/sick_spells_chart.RData": {
+      "checksum": "e6b1068da5f82ecbc29919606935a35f"
+    },
+    "deploy_data/total_dalys_chart.RData": {
+      "checksum": "c76cfe09c1161518dd3f1a84923029bd"
+    },
+    "deploy_data/yld_time_chart.RData": {
+      "checksum": "8cc069b04356c18ec2c56d0acab4ea93"
+    },
+    "deploy_data/yll_time_chart.RData": {
+      "checksum": "ab5ab3fa44e8e8b9d0d6a90c02364151"
     },
     "lifetables.xlsx": {
       "checksum": "a7d2c976b16f34006852be56e77a679a"

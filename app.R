@@ -51,7 +51,7 @@ print(file.exists(system.file("htmlwidgets/lib/jquery.sparkline/jquery.sparkline
 
 print('#################################')
 
-lapply(ls(global_env()),function(x){
+lapply(ls(globalenv()),function(x){
   y <<- x
   obj <- get(x)
   if('echarts4r'%in%class(obj)){

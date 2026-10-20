@@ -55,7 +55,7 @@ lapply(ls(globalenv()),function(x){
   y <<- x
   obj <- get(x)
   if('echarts4r'%in%class(obj)){
-    # print(T)
+    print('T')
     
     if(!is.null(obj$x$theme) & obj$x$theme != ''){
       print(obj$x$theme)

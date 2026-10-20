@@ -16,7 +16,9 @@ library(leaflet)
 
 library(watcher)
 
+print('----- start loading cost charts -------')
 load("cost_charts.RData")
+print('----- finish loading cost charts -------')
 
 system("ls -lh")        # list files
 system("echo Hello!")   # print message

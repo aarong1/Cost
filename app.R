@@ -51,6 +51,37 @@ print(file.exists(system.file("htmlwidgets/lib/jquery.sparkline/jquery.sparkline
 
 print('#################################')
 
+lapply(ls(globalenv()),function(x){
+  y <<- x
+  obj <- get(x)
+  if('echarts4r'%in%class(obj)){
+    # print(T)
+    
+    if(!is.null(obj$x$theme) & obj$x$theme != ''){
+      print(obj$x$theme)
+      # print(x)
+      # print(obj$x$theme)
+      # obj$dependencies[[1]]$src$file <- system.file("htmlwidgets/lib/echarts-6.0.0/themes", package = "echarts4r")#htmltools::htmlDependency(name = obj$x$theme, version = "1.0.0",
+      #                         src = system.file("htmlwidgets/lib/echarts-6.0.0/themes", package = "echarts4r"),
+      #                        script = paste0(obj$x$theme, ".js")
+      # )
+      
+      obj$dependencies[[1]] <-  htmltools::htmlDependency(name = obj$x$theme, version = "1.0.0", 
+                                                          src = system.file("htmlwidgets/lib/echarts-6.0.0/themes", package = "echarts4r"),
+                                                          script = paste0(obj$x$theme, ".js")
+      )
+      
+      
+      # x<<-obj
+      # print (obj)
+      assign(x, obj,envir = globalenv())
+    }}
+  
+})
+
+print('#################################')
+
+
 graph_wrapper <- function(..., header =NULL){
   
   div(class = "grid-item grid-item--graph theme-cyan",
@@ -302,7 +333,7 @@ tags$nav(
                                 
                                 
                                 tags$div( id = "intro",
-                                          h2('Cost and Impact Analysis for Decision Support and Public Health Planning bg-info-subtle',class = 'm-5 p-3 '),
+                                          h2('Cost and Impact Analysis for Decision Support and Public Health Planning ',class = 'm-5 p-3 bg-info-subtle'),
                                           hr(),
                                           tags$span(class ='',"The Impact and Costing module of the Population Health Model supports Decision Making and
                                                     Public Health Planning for the Public Health Agency.

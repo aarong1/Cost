@@ -51,12 +51,13 @@ print(file.exists(system.file("htmlwidgets/lib/jquery.sparkline/jquery.sparkline
 
 print('#################################')
 
-lapply(ls(globalenv()),function(x){
+lapply(ls(globalenv()), function(x){
   y <<- x
   obj <- get(x)
-  if('echarts4r'%in%class(obj)){
+  print(x)
+  if('echarts4r' %in% class(obj) ){
     print('T')
-    
+
     if(!is.null(obj$x$theme) & obj$x$theme != ''){
       print(obj$x$theme)
       # print(x)
@@ -74,7 +75,7 @@ lapply(ls(globalenv()),function(x){
       
       # x<<-obj
       # print (obj)
-      assign(x, obj,envir = globalenv())
+      assign(x, obj, envir = globalenv())
     }}
   
 })

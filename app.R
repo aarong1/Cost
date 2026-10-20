@@ -17,7 +17,7 @@ library(leaflet)
 library(watcher)
 
 print('----- start loading cost charts -------')
-load("cost_charts.RData",envir = globalenv())
+# load("cost_charts.RData",envir = globalenv())
 sick_spells_chart <- readRDS('./deploy_data/sick_spells_chart.RData')
 sick_costs_chart <- readRDS('./deploy_data/sick_costs_chart.RData')
 days_lost_chart <- readRDS('./deploy_data/days_lost_chart.RData')
@@ -34,6 +34,7 @@ total_dalys_chart <- readRDS('./deploy_data/total_dalys_chart.RData')
 cmms_age10_chart <- readRDS('./deploy_data/cmms_age10_chart.RData')
 multimorbidity_age10 <- readRDS('./deploy_data/multimorbidity_age10.RData')
 multimorbidity_age10_chart <- readRDS('./deploy_data/multimorbidity_age10_chart.RData')
+
 print('----- finish loading cost charts -------')
 
 system("ls -lh")        # list files
